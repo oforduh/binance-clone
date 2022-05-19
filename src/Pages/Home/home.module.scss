@@ -1,0 +1,23 @@
+.container {
+  min-height: calc(100vh - 70px);
+  margin-top: 70px;
+  width: 100%;
+  // border: 2px solid red;
+  color: var(--dark);
+  background-color: var(--white);
+  b .bannerSection {
+    min-height: 60vh;
+    width: 100%;
+    // border: 2px solid red;
+  }
+  .footerSection {
+    min-height: 400px;
+    width: 100%;
+    // border: 2px solid red;
+  }
+}
+
+.darkMode {
+  background-color: var(--footerColorDark);
+  color: var(--white);
+}

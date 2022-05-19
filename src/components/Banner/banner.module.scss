@@ -1,0 +1,28 @@
+.Container {
+  width: 100%;
+  min-height: 100%;
+  border: 2px solid blue;
+  position: relative;
+
+  .bannerPage {
+    background-color: var(--dark);
+    img {
+      position: absolute;
+      width: 60%;
+      height: 100%;
+      //   z-index: -1;
+      right: 0;
+      //   object-fit: cover;
+    }
+
+    min-height: 500px;
+
+    .logoText {
+      border: 2px solid red;
+      width: 40%;
+      z-index: 2;
+      color: white;
+      //   border: 3px solid red;
+    }
+  }
+}

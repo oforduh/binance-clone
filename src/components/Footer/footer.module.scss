@@ -1,0 +1,60 @@
+.ParentDiv {
+  width: 100%;
+  .container {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 2px solid blue;
+    .footerContent {
+    //   border: 2px solid red;
+      padding: 30px;
+      width: 80%;
+      min-height: 350px;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 20px;
+      div {
+        h2 {
+          margin-bottom: 10px;
+          font-weight: bolder;
+        }
+        ul {
+          list-style: none;
+          li {
+            margin: 10px 0;
+            //   border: 3px solid red;
+          }
+        }
+        &:nth-child(6) {
+          ul {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+          }
+        }
+      }
+    }
+  }
+  .binanceDivContent {
+      height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 3px solid red;
+    .content {
+        border-top: 1px solid  var(--dark);
+        text-align: center;
+      width: 80%;
+      padding: 30px 0;
+    //   border: 3px solid red;
+    }
+  }
+}
+
+.darkMode {
+  background-color: var(--footerColorDark);
+  color: var(--white);
+}
