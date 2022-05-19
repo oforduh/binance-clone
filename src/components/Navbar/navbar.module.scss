@@ -213,6 +213,17 @@
   background-color: var(--verticalBackgroundColor);
   color: var(--white) !important;
 }
+
+@media screen and (min-width: 950px) {
+  .lisItem {
+    ul {
+      display: flex;
+    }
+  }
+  .verticalBarContainer {
+    display: none;
+  }
+}
 @media screen and (max-width: 950px) {
   .container {
     .navbarContainer {
@@ -239,14 +250,35 @@
     }
   }
 }
-
-@media screen and (min-width: 950px) {
-  .lisItem {
-    ul {
-      display: flex;
+@media screen and (max-width: 520px) {
+  .container {
+    .navbarContainer {
+      // border: 3px solid blue;
+      .navbarContent {
+        .linkContainer {
+          .lisItem {
+            ul {
+              display: none;
+            }
+          }
+          .iconContainer {
+            .toggleParent {
+              display: none;
+              // border: 3px solid blue;
+            }
+            .hamburgerParent {
+              // border: 3px solid blue;
+              display: block;
+            }
+          }
+        }
+      }
     }
-  }
-  .verticalBarContainer {
-    display: none;
+    .verticalBarContainer {
+      width: 100%;
+    }
+    .active {
+      right: -100%;
+    }
   }
 }

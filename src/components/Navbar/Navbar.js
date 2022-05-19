@@ -6,10 +6,10 @@ import { BsFillSunFill } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { ThemeObject } from "../../context/themeContext";
+import "./toggle.css";
 
 const Navbar = () => {
   const { toggleTheme, theme } = ThemeObject();
-  console.log(theme);
   const reducer = (state, action) => {
     switch (action.type) {
       case "toggleNavIcon":
@@ -25,6 +25,9 @@ const Navbar = () => {
       default:
         return state;
     }
+  };
+  const toggleTheme2 = () => {
+    console.log("This works");
   };
 
   const [state, dispatch] = useReducer(reducer, {
@@ -115,7 +118,17 @@ const Navbar = () => {
                   <div className={styles.logoItem}></div>
                   <div className={styles.logoText}>Theme</div>
                 </div>
-                <div>Lorem ipsum</div>
+                <div>
+                  <label class="switch">
+                    <input
+                      type="checkbox"
+                      onChange={() => {
+                        toggleTheme();
+                      }}
+                    />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
               </div>
             </div>
           </div>

@@ -22,8 +22,7 @@ function Table() {
 
         // Truncate fee to 6 decimal places
         rndInteger = rndInteger.slice(0, rndInteger.indexOf(".") + 7);
-
-        console.log("This is my number", rndInteger);
+        
         // Change fee from string to number
 
         Number(rndInteger);
