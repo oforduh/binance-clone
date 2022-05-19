@@ -1,6 +1,15 @@
 import React from "react";
 import styles from "./footer.module.scss";
 import { ThemeObject } from "../../context/themeContext";
+import { FaDiscord } from "react-icons/fa";
+import {
+  BsTelegram,
+  BsFacebook,
+  BsTwitter,
+  BsReddit,
+  BsInstagram,
+  BsYoutube,
+} from "react-icons/bs";
 
 const Footer = () => {
   const { theme } = ThemeObject();
@@ -95,15 +104,29 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3>About us</h3>
+            <h3>Community</h3>
             <ul>
-              <li>Lorem, ipsum.</li>
-              <li>Lorem, ipsum.</li>
-              <li>Lorem, ipsum.</li>
-              <li>Lorem, ipsum.</li>
-              <li>Lorem, ipsum.</li>
-              <li>Lorem, ipsum.</li>
-              <li>Lorem, ipsum.</li>
+              <li>
+                <FaDiscord />
+              </li>
+              <li>
+                <BsTelegram />
+              </li>
+              <li>
+                <BsFacebook />
+              </li>
+              <li>
+                <BsTwitter />
+              </li>
+              <li>
+                <BsReddit />
+              </li>
+              <li>
+                <BsInstagram />
+              </li>
+              <li>
+                <BsYoutube />
+              </li>
             </ul>
           </div>
         </div>
