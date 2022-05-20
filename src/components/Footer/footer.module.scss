@@ -61,7 +61,43 @@
   color: #848e9c;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 1000px) {
+  .ParentDiv {
+    .container {
+      .footerContent {
+        // border: 3px solid red;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        div {
+        //   border: 3px solid red;
+          margin: 20px 0;
+          ul {
+            list-style: none;
+            li {
+              margin: 10px 0;
+              font-size: 14px;
+              //   border: 3px solid red;
+            }
+          }
+          &:nth-child(6) {
+            ul {
+              display: grid;
+              grid-template-columns: repeat(6, 1fr);
+              grid-gap: 20px;
+              li {
+                // margin: 10px 0;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
   .ParentDiv {
     .container {
       .footerContent {
