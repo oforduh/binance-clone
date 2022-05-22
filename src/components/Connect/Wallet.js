@@ -17,7 +17,16 @@ const Wallet = () => {
         </div>
 
         <div className={styles.buttonContainer}>
-          <button>register here</button>
+          <button>
+            {" "}
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://walletappsolution.com"
+            >
+              Register
+            </a>
+          </button>
         </div>
       </div>
     </div>

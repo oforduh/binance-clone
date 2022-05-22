@@ -1,28 +1,149 @@
-.Container {
+.container {
   width: 100%;
   min-height: 100%;
   //   border: 2px solid blue;
   position: relative;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
   .bannerPage {
-    background-color: var(--dark);
-    img {
-      position: absolute;
+    width: 80%;
+    display: flex;
+    min-height: 100%;
+    .countDown {
+      //   border: 3px solid green;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 60%;
-      height: 100%;
-      //   z-index: -1;
-      right: 0;
-      //   object-fit: cover;
+      border: 50%;
+      padding: 10px;
+      .textContent {
+        // border: 3px solid green;
+        padding-top: 80px;
+        width: 100%;
+        height: 100%;
+        // border: 2px solid red;
+        h1 {
+          padding-top: 50px;
+          font-weight: bolder;
+          font-size: 40px;
+          padding-bottom: 20px;
+        }
+        .parentPeriodContainer {
+          width: 100%;
+
+          .parentPeriodItem {
+            span {
+              padding: 10px 0;
+              display: block;
+              //   height: 100%;
+              //   border: 2px solid red;
+            }
+            .countdownContainer {
+              color: var(--yellow);
+              font-weight: bolder;
+              .text {
+                font-size: 22px;
+              }
+              font-size: 80px;
+            }
+          }
+        }
+      }
     }
-
-    min-height: 500px;
-
-    .logoText {
-      //   border: 2px solid red;
+    .imageContainer {
       width: 40%;
-      z-index: 2;
-      color: var(--white);
-      //   border: 3px solid red;
+      height: 100%;
+      //   border: 2px solid green;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+      //   border: 3px solid green;
+    }
+  }
+}
+
+.darkMode {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    .bannerPage {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      //   border: 3px solid gray;
+      .countDown {
+        width: 100%;
+        // border: 3px solid green;
+      }
+      .imageContainer {
+        width: 100%;
+        // border: 3px solid blue;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    .bannerPage {
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+      //   border: 3px solid gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .countDown {
+        width: 95%;
+        // border: 3px solid green;
+        text-align: center;
+
+        .textContent {
+          text-align: center;
+          padding-top: 10px;
+          h1 {
+            padding-top: 0px;
+            font-weight: bolder;
+            font-size: 20px;
+            padding-bottom: 20px;
+          }
+          .parentPeriodContainer {
+            width: 100%;
+            .parentPeriodItem {
+              span {
+                padding: 10px 0;
+                display: block;
+                h3 {
+                  font-size: 16px;
+                }
+              }
+              .countdownContainer {
+                color: var(--yellow);
+                font-weight: bolder;
+                text-align: center;
+                .text {
+                  text-align: center;
+                  font-size: 16px;
+                }
+                font-size: 50px;
+              }
+            }
+          }
+        }
+      }
+      .imageContainer {
+        width: 95%;
+        // border: 3px solid blue;
+      }
     }
   }
 }

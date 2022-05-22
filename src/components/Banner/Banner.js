@@ -1,27 +1,52 @@
 import React from "react";
 import styles from "./banner.module.scss";
-
-import bg from "../../assets/jasmy.jpeg";
+import displayPage from "../../assets/landingphoto.svg";
+import { ThemeObject } from "../../context/themeContext";
+import Countdown from "react-countdown";
 
 const Banner = () => {
+  const { theme } = ThemeObject();
+  // Renderer callback with condition
+
+  const renderer = ({ days, hours, minutes, seconds, completed }) => {
+    return (
+      <span>
+        {days}:{hours}:{minutes}:{seconds}
+      </span>
+    );
+  };
   return (
-    <div className={styles.Container}>
+    <div
+      className={
+        theme ? `${styles.container}` : `${styles.container} ${styles.darkMode}`
+      }
+    >
       <div className={styles.bannerPage}>
-        <img src={bg} alt="" />
-        <div className={styles.logoText}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
-          provident quam facilis eligendi, delectus rem voluptas voluptatum in
-          illum ipsa exercitationem et numquam tempora magnam ab totam nihil, at
-          aperiam. Consectetur non, repudiandae aliquid tempore illum, quidem
-          culpa perspiciatis id, fugiat iste nostrum tenetur sequi! Harum dicta
-          accusantium dignissimos aliquam facilis nobis placeat mollitia natus
-          recusandae eum nesciunt consectetur voluptatum possimus labore quod ab
-          corrupti soluta, sit odit eaque iusto earum vel. Illum optio
-          distinctio maxime inventore, aperiam rem! Eius aut odit quam non,
-          velit quidem recusandae impedit illo aliquam voluptates alias
-          similique quasi pariatur repudiandae adipisci maxime ab labore.
+        <div className={styles.imageContainer}>
+          <img src={displayPage} alt={displayPage} />
         </div>
-        <div className={styles.logoItem}></div>
+        <div className={styles.countDown}>
+          <div className={styles.textContent}>
+            <h1>
+              JASMY/USDT USDⓈ-M Futures Trading Tournament - 150,000 BUSD Up for
+              Grabs!
+            </h1>
+            <div className={styles.parentPeriodContainer}>
+              <div className={styles.parentPeriodItem}>
+                <span className={styles.period}>
+                  <h3>
+                    Activity Period: 2022/05/23 00:00:00 - 2022/06/01 23:59:59
+                    (UTC)
+                  </h3>
+                </span>
+                <div className={styles.countdownContainer}>
+                  <span className={styles.text}> Activity ends in </span>
+                  <Countdown date={`2022/06/01`} renderer={renderer} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

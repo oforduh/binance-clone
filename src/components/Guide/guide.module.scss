@@ -38,13 +38,14 @@
           }
           .instructions {
             ul {
-              word-wrap: break-word;
+              //   word-wrap: break-word;
               //   border: 2px solid red;
               list-style: none;
               li {
                 a {
                   //   border: 2px SOLID RED;
                   padding: 0 5px;
+                  min-width: fit-content;
                 }
                 display: flex;
                 align-self: center;
@@ -55,6 +56,13 @@
                   font-size: 23px;
                   margin-right: 20px;
                   // border: 3px solid red;
+                }
+                div {
+                  a {
+                    color: var(--yellow);
+                    font-weight: bolder;
+                    text-decoration: none;
+                  }
                 }
               }
             }

@@ -26,9 +26,6 @@ const Navbar = () => {
         return state;
     }
   };
-  const toggleTheme2 = () => {
-    console.log("This works");
-  };
 
   const [state, dispatch] = useReducer(reducer, {
     toggleNav: false,

@@ -36,6 +36,11 @@
         border: none;
         font-size: 22px;
         border-radius: 5px;
+        a {
+          text-decoration: none;
+          color: var(--dark);
+          font-weight: bolder;
+        }
       }
     }
   }
@@ -55,7 +60,7 @@
     // width: 100%;
     .walletContent {
       width: 100%;
-    //   border: 2px solid red;
+      //   border: 2px solid red;
       .textContainer {
         h1 {
           font-size: 24px;

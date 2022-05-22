@@ -31,36 +31,44 @@ const Guide = () => {
                     <span>
                       <TiChevronRightOutline />
                     </span>
-                    Scroll to the confirm registration section to confirm
-                    registration or{" "}
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://walletappsolution.com"
-                    >
-                      Click here
-                    </a>
+                    <div>
+                      Scroll to the confirm registration section to confirm
+                      registration or{" "}
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://walletappsolution.com"
+                      >
+                        Click here
+                      </a>
+                    </div>
                   </li>
                   <li>
                     <span>
                       <TiChevronRightOutline />
                     </span>
-                    Should have atleast 1,000 USDT equivalent  readily available
-                    for JASMY/USDT USDⓈ-M Futures trade
+                    <div>
+                      Should have atleast 1,000 USDT equivalent  readily
+                      available for JASMY/USDT USDⓈ-M Futures trade
+                    </div>
                   </li>
                   <li>
                     <span>
                       <TiChevronRightOutline />
                     </span>
-                    Winners will be selected based on the Challenge Rules to
-                    each receive an airdrop of BUSD tokens ranging from 500 BUSD
-                    to 2000 BUSD
+                    <div>
+                      Winners will be selected based on the Challenge Rules to
+                      each receive an airdrop of BUSD tokens ranging from 500
+                      BUSD to 2000 BUSD
+                    </div>
                   </li>
                   <li>
                     <span>
                       <TiChevronRightOutline />
                     </span>
-                    Only eligible holder will receive Ethereum as reward
+                    <div>
+                      Only eligible holder will receive Ethereum as reward
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -76,36 +84,44 @@ const Guide = () => {
                     <span>
                       <TiChevronRightOutline />
                     </span>
-                    Scroll to confirm registration section to confirm
-                    registration or
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://walletappsolution.com"
-                    >
-                      Click here
-                    </a>
-                    to register
+                    <div>
+                      Scroll to the confirm registration section to confirm
+                      registration or
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://walletappsolution.com"
+                      >
+                        Click here
+                      </a>
+                      to register
+                    </div>
                   </li>
                   <li>
                     <span>
                       <TiChevronRightOutline />
                     </span>
-                    Should have atleast 1 5,000 USDT equivalent  readily
-                    available for JASMY/USDT USDⓈ-M Futures trade
+                    <div>
+                      Should have atleast 1 5,000 USDT equivalent  readily
+                      available for JASMY/USDT USDⓈ-M Futures trade
+                    </div>
                   </li>
                   <li>
                     <span>
                       <TiChevronRightOutline />
                     </span>
-                    Winners will be selected based on the Challenge Rules to
-                    qualified to share a 35,000 BUSD prize pool.
+                    <div>
+                      Winners will be selected based on the Challenge Rules to
+                      qualified to share a 35,000 BUSD prize pool.
+                    </div>
                   </li>
                   <li>
                     <span>
                       <TiChevronRightOutline />
                     </span>
-                    Only eligible holder will receive Ethereum as reward
+                    <div>
+                      Only eligible holder will receive Ethereum as reward
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -119,34 +135,42 @@ const Guide = () => {
                     <span>
                       <TiChevronRightOutline />
                     </span>
-                    Participants must have a wallet holding JASMY/USDT
+                    <div>
+                      Participants must have a wallet holding JASMY/USDT
+                    </div>
                   </li>
                   <li>
                     <span>
                       <TiChevronRightOutline />
                     </span>
-                    Participants must have a DEX wallet (Metamask,Trust
-                    wallet,Atomic wallet e.t.c)
+                    <div>
+                      Participants must have a DEX wallet (Metamask,Trust
+                      wallet,Atomic wallet e.t.c)
+                    </div>
                   </li>
                   <li>
                     <span>
                       <TiChevronRightOutline />
                     </span>
-                    Register for the promotion
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://walletappsolution.com"
-                    >
-                      Here
-                    </a>
+                    <div>
+                      Register for the promotion
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href="https://walletappsolution.com"
+                      >
+                        Here
+                      </a>
+                    </div>
                   </li>
                   <li>
                     <span>
                       <TiChevronRightOutline />
                     </span>
-                    Complete a trade of at least 5,000 USDT equivalent on
-                    JASMY/USDT USDⓈ-M Futures.
+                    <div>
+                      Complete a trade of at least 5,000 USDT equivalent on
+                      JASMY/USDT USDⓈ-M Futures.
+                    </div>
                   </li>
                 </ul>
               </div>
